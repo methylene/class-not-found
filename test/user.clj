@@ -1,1 +1,1 @@
-(ns user (:require [cascalog.api]))
+(ns user)
