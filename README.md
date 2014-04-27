@@ -9,6 +9,8 @@ Try this to cause a `java.lang.ClassNotFoundException` `cascalog.logic.def.Paral
 LEIN_SNAPSHOTS_IN_RELEASE=true lein do clean, deps, uberjar
 ````
 
+(UPDATE: `lein repl` fails with a similar exception)
+
 
 The clojure version is 1.5.1.
 

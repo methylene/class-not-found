@@ -1,10 +1,5 @@
-(ns class-not-found.core
-  (:require [cascalog.api :refer [defparallelagg]])
-  (:gen-class))
-
-(defparallelagg parallel-mult
-  :init-var #'identity
-  :combine-var #'*)
-
-(defn -main [& args])
-
+(ns class-not-found.core)
+(gen-class :main true)
+(require '[cascalog.logic.def])
+(import [cascalog.logic.def ParallelAggregator])
+(defn -main [_])

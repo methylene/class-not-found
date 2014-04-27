@@ -1,1 +1,2 @@
-(ns user (:require [cascalog.api]))
+(ns user)
+(require '[cascalog.logic.def])
