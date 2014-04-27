@@ -6,8 +6,9 @@ Demonstrate a compile problem we had with cascalog.
 Try this to cause a `java.lang.ClassNotFoundException` `cascalog.logic.def.ParallelAggregator`:
 
 ````
-lein do clean, deps, uberjar
+LEIN_SNAPSHOTS_IN_RELEASE=true lein do clean, deps, uberjar
 ````
+
 
 The clojure version is 1.5.1.
 
