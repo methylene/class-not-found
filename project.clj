@@ -2,5 +2,4 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [record-holder "2.1.1-SNAPSHOT"]]
   :main class-not-found.core
-  :aot [class-not-found.core]
-  :profiles {:provided {:dependencies [[org.apache.hadoop/hadoop-core "1.2.1"]]}})
+  :aot [class-not-found.core])
