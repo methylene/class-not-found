@@ -1,2 +1,2 @@
 (ns user)
-(require '[cascalog.logic.def])
+(require '[record-holder.def])

@@ -1,5 +1,5 @@
 (ns class-not-found.core)
 (gen-class :main true)
-(require '[cascalog.logic.def])
-(import [cascalog.logic.def ParallelAggregator])
+(require '[record-holder.def])
+(import [record-holder.def ParallelAggregator])
 (defn -main [_])
