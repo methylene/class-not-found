@@ -1,5 +1,4 @@
-(ns class-not-found.core)
-(gen-class :main true)
+(ns class-not-found.core (:gen-class :main true))
 (require '[record-holder.def])
-(import [record-holder.def ParallelAggregator])
-(defn -main [_])
+(import [record_holder.def ParallelAggregator])
+(defn -main [& _] (println (ParallelAggregator.)))
