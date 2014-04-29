@@ -21,6 +21,8 @@ lein do clean, deps, compile, repl
 
 (UPDATE 3: Starting a repl still fails, but `LEIN_SNAPSHOTS_IN_RELEASE=true lein do clean, deps, compile, uberjar` works now)
 
+(UPDATE 4: You can reproduce it even without lein, using `./install.sh && ./compile.sh && ./run.sh`. Notice how that works when you enable :aot in lib/record-holder/project.clj)
+
 The clojure version is 1.5.1.
 
 The lein version is: Leiningen 2.3.4 on Java 1.7.0_51 OpenJDK 64-Bit Server VM
