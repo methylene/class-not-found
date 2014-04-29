@@ -12,12 +12,14 @@ Try this to cause a `java.lang.ClassNotFoundException` `record-holder.def.Parall
 cd lib/record-holder
 lein install
 cd ../..
-LEIN_SNAPSHOTS_IN_RELEASE=true lein do clean, deps, uberjar
+lein do clean, deps, compile, repl
 ````
 
 (UPDATE: `lein repl` in the last step causes a similar error)
 
 (UPDATE 2: There was an error in the imported classname, which I had forgotten to munge. Now you can `./install.sh && ./compile.sh && ./run.sh` to get the error even without lein)
+
+(UPDATE 3: Starting a repl still fails, but `LEIN_SNAPSHOTS_IN_RELEASE=true lein do clean, deps, compile, uberjar` works now)
 
 The clojure version is 1.5.1.
 
