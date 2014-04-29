@@ -15,7 +15,7 @@ cd ../..
 rm -rf target && lein do clean, deps, compile && lein repl
 ````
 
-You can produce a similar without using leiningen, like this: `./install.sh && ./compile.sh && ./run.sh`. Notice how that works when you enable `aot` in [lib/record-holder/project.clj](lib/record-holder/project.clj).
+You can produce a similar without using leiningen, like this: `./install.sh && ./compile.sh && ./run.sh`. Notice how that works when you enable `aot` in [lib/record-holder/project.clj](lib/record-holder/project.clj). Notice how it works when you remove `(require '[record-holder.def])` from [test/user.clj](test/user.clj), too.
 
 The clojure version is 1.6.0
 
