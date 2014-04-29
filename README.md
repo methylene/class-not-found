@@ -1,7 +1,7 @@
 class-not-found
 ===============
 
-This project originally showed a compile problem we had with cascalog. But now it looks like a leiningen / classloading issue. There is a combination of `defrecord` (in the "library" project), `import` and `require` (in `user.clj`) that leiningen doesn't like.
+This project originally showed a compile problem we had with cascalog. But now it looks like a ~~leiningen / classloading~~ Clojure issue. There is a combination of `defrecord` (in the "library" project), `import` and `require` (in `user.clj`) that leiningen doesn't like.
 
 The problem can be worked around by adding an :aot in the library project. However, some say that this would be a bad style. Also it would be tiresome to have to go and sprinkle :aot everywhere, just because of some leiningen hickup.
 
